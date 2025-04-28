@@ -1,0 +1,54 @@
+/* components/LoadingSpinner.module.css */
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 31.415;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -31.415;
+    }
+}
+
+.svg {
+    animation: rotate 2s linear infinite;
+}
+
+.circle {
+    stroke: #0070f3;
+    stroke-width: 5;
+    fill: none;
+    stroke-dasharray: 31.415, 31.415;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+.circle2 {
+    stroke: #fff;
+    stroke-width: 5;
+    fill: none;
+    stroke-dasharray: 31.415, 31.415;
+    animation: dash 1.5s ease-in-out infinite;
+}

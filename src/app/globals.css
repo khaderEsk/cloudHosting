@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind utilities;
+
+:root {
+  --background: #f0ecec;
+}
+
+body {
+  background-color: var(--background);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.fix-height {
+  min-height: calc(100vh - 150px);
+}
+
+.overflow-height {
+  height: calc(100vh - 150px);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
